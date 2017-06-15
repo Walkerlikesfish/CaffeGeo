@@ -1,0 +1,61 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_806c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_806c9.dir/build.make CMakeFiles/cmTC_806c9.dir/build
+make[1]: Entering directory '/home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /home/yuliu/anaconda2/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_806c9.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_806c9.dir/CheckSymbolExists.c.o   -c /home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /home/yuliu/anaconda2/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_806c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_806c9.dir/link.txt --verbose=1
+/usr/bin/cmake: /home/yuliu/anaconda2/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_806c9.dir/CheckSymbolExists.c.o  -o cmTC_806c9 -rdynamic 
+CMakeFiles/cmTC_806c9.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_806c9.dir/build.make:97: recipe for target 'cmTC_806c9' failed
+make[1]: *** [cmTC_806c9] Error 1
+make[1]: Leaving directory '/home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_806c9/fast' failed
+make: *** [cmTC_806c9/fast] Error 2
+
+File /home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f35d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f35d.dir/build.make CMakeFiles/cmTC_5f35d.dir/build
+make[1]: Entering directory '/home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /home/yuliu/anaconda2/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_5f35d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5f35d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /home/yuliu/anaconda2/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_5f35d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f35d.dir/link.txt --verbose=1
+/usr/bin/cmake: /home/yuliu/anaconda2/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5f35d.dir/CheckFunctionExists.c.o  -o cmTC_5f35d -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5f35d.dir/build.make:97: recipe for target 'cmTC_5f35d' failed
+make[1]: *** [cmTC_5f35d] Error 1
+make[1]: Leaving directory '/home/yuliu/Documents/Tread/DeepNetsForEO/caffe/cmake/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5f35d/fast' failed
+make: *** [cmTC_5f35d/fast] Error 2
+
+
