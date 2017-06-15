@@ -18,7 +18,7 @@ CaffeGeo is released under the [BSD 2-Clause license]
 
 Please cite Caffe and CaffeGeo in your publications if it helps your research:
 
-@article{liu2017hourglass,
+	@article{liu2017hourglass,
 	title={Hourglass-ShapeNetwork Based Semantic Segmentation for High Resolution Aerial Imagery},
 	author={Liu, Yu and Minh Nguyen, Duc and Deligiannis, Nikos and Ding, Wenrui and Munteanu, Adrian},
 	journal={Remote Sensing},
