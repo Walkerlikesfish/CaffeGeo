@@ -4,13 +4,17 @@
 
 Unpooling layer and weighted balancing are integrated in the original caffe.
 
-The HSN is described in **Hourglass-ShapeNetwork Based Semantic Segmentation for High Resolution Aerial Imagery**Yu Liu, Duc Minh Nguyen, Nikos Deligiannis, Wenrui Ding, Adrian Munteanu. (http://www.mdpi.com/2072-4292/9/6/522)
+The HSN is described in **Hourglass-ShapeNetwork Based Semantic Segmentation for High Resolution Aerial Imagery**, Yu Liu, Duc Minh Nguyen, Nikos Deligiannis, Wenrui Ding, Adrian Munteanu. (http://www.mdpi.com/2072-4292/9/6/522)
 
 ## HSN net Specification
+HSN network protofile is made available at (https://github.com/Walkerlikesfish/HSNRS.git)
 
 ## HSN example
+The network trained model is made available at (https://github.com/Walkerlikesfish/HSNRS.git)
 
 ## Dataset
+The mentioned remote sensing dataset Vaihingen and Potsdam set are available from ISPRS:
+http://www2.isprs.org/commissions/comm3/wg4/tests.html
 
 ## License and Citation
 
