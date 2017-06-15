@@ -18,7 +18,8 @@ http://www2.isprs.org/commissions/comm3/wg4/tests.html
 
 ## License and Citation
 
-CaffeGeo is released under the [BSD 2-Clause license]
+This extension to the Caffe library is released under a creative commons license which allows for personal and research use only. For a commercial license please contact the authors. You can view a license summary here:
+http://creativecommons.org/licenses/by-nc/4.0/
 
 Please cite Caffe and CaffeGeo in your publications if it helps your research:
 
@@ -32,6 +33,3 @@ Please cite Caffe and CaffeGeo in your publications if it helps your research:
 	year={2017},
 	publisher={Multidisciplinary Digital Publishing Institute}
 	}
-
-This extension to the Caffe library is released under a creative commons license which allows for personal and research use only. For a commercial license please contact the authors. You can view a license summary here:
-http://creativecommons.org/licenses/by-nc/4.0/
