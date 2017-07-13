@@ -407,6 +407,7 @@ message LayerParameter {
   optional UpsampleParameter upsample_param = 150;
   optional TileParameter tile_param = 138;
   optional WindowDataParameter window_data_param = 129;
+  optional SoftmaxWeightedParameter softmax_w_param = 166;
 }
 
 // Message that stores parameters used to apply transformation
@@ -1138,6 +1139,24 @@ message SoftmaxParameter {
   // Any other axes will be evaluated as independent softmaxes.
   optional int32 axis = 2 [default = 1];
 }
+
+// Message that stores parameters used by SoftmaxWithLossWeightedLayer
+message SoftmaxWeightedParameter {
+  enum Engine {
+    DEFAULT = 0;
+    CAFFE = 1;
+    CUDNN = 2;
+  }
+  optional Engine engine = 1 [default = DEFAULT];
+
+  // The axis along which to perform the softmax -- may be negative to index
+  // from the end (e.g., -1 for the last axis).
+  // Any other axes will be evaluated as independent softmaxes.
+  optional int32 axis = 2 [default = 1];
+  optional bool weight_by_label_freqs = 3 [default = false];
+  repeated float class_weighting = 4;
+}
+
 
 message TanHParameter {
   enum Engine {
