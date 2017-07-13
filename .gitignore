@@ -1,0 +1,9 @@
+# python complie files
+*.pyc
+*.caffemodel
+*.solverstate
+
+# data folders
+data/
+examples/
+build
